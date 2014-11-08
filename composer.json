@@ -1,5 +1,5 @@
 {
-	"name": "mishak/newrelic-logger",
+	"name": "o5/newrelic-logger",
 	"type": "library",
 	"description": "Tighter integration of logging to New Relic for Nette Framework",
 	"keywords": ["nette", "newrelic", "new relic", "logger"],
