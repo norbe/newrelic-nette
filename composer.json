@@ -1,5 +1,5 @@
 {
-	"name": "o5/newrelic-logger",
+	"name": "o5/newrelic-nette",
 	"type": "library",
 	"description": "Tighter integration of logging to New Relic for Nette Framework",
 	"keywords": ["nette", "newrelic", "new relic", "logger"],
