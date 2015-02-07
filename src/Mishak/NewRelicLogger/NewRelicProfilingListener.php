@@ -29,7 +29,7 @@ class NewRelicProfilingListener extends Nette\Object implements Kdyby\Events\Sub
 		}
 
 		$oldLogger = Debugger::getLogger();
-		$logger = new Logger;
+        $logger = new Logger(\Tracy\Debugger::$logDirectory);
 		$logger->emailSnooze = $oldLogger->emailSnooze;
 		$logger->mailer = $oldLogger->mailer;
 		$logger->directory = $oldLogger->directory;
