@@ -9,8 +9,9 @@ use Nette\Application\Request;
 use Nette\Diagnostics\Debugger;
 
 
-class NewRelicProfilingListener extends Nette\Object implements Kdyby\Events\Subscriber
+class NewRelicProfilingListener implements Kdyby\Events\Subscriber
 {
+	use \Nette\SmartObject;
 
 	public function getSubscribedEvents()
 	{
@@ -57,7 +58,7 @@ class NewRelicProfilingListener extends Nette\Object implements Kdyby\Events\Sub
 	}
 
 
-	public function onError(Application $app, \Exception $e)
+	public function onError(Application $app, \Throwable $e)
 	{
 		if (!extension_loaded('newrelic')) {
 			return;
